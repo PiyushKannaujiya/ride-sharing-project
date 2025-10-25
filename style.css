@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #f5d142;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(90deg, #000, #1a1a1a);
+  border-bottom: 2px solid #f5d142;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #d4af37;
+  font-size: 1.1rem;
+}
+
+/* Main Container */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #1a1a1a;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #f5d14240;
+  text-align: center;
+  max-width: 400px;
+}
+
+.container h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.container p {
+  color: #c9a93a;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #f5d142;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cfae1d;
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #f5d142;
+  color: #f5d142;
+}
+
+.btn-outline:hover {
+  background-color: #f5d142;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #b89f33;
+  border-top: 1px solid #f5d14233;
+}
+
+/* ===== Login & Signup Forms ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  color: #f5d142;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #f5d142;
+  border-radius: 8px;
+  background-color: #000;
+  color: #f5d142;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #cfae1d;
+  box-shadow: 0 0 10px #f5d14240;
+}
+
+/* Switch link below form */
+.switch-text {
+  margin-top: 1.5rem;
+  color: #b89f33;
+}
+
+.link {
+  color: #f5d142;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+
+/* ===== Extra Styling for Signup Fields ===== */
+select, input[type="number"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #f5d142;
+  border-radius: 8px;
+  background-color: #000;
+  color: #f5d142;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+select:focus, input[type="number"]:focus {
+  border-color: #cfae1d;
+  box-shadow: 0 0 10px #f5d14240;
+}
+
+select option {
+  background-color: #000;
+  color: #f5d142;
+}

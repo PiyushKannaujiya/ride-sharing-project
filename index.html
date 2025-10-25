@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ride Sharing Optimizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚗 Ride Sharing Optimizer</h1>
+    <p>Smart, Fast & Eco-Friendly Rides</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Welcome Back!</h2>
+      <p>Connect with drivers and riders in seconds.</p>
+
+      <!-- 👇 Added form here -->
+      <form action="http://localhost/cgi-bin/backend/backend.cgi" method="POST" class="form">
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Enter username" required />
+          <input type="password" name="password" placeholder="Enter password" required />
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+
+      <div class="btn-group">
+        <a href="login.html" class="btn">Login Page</a>
+        <a href="signup.html" class="btn btn-outline">Sign Up</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Ride Sharing Optimizer | Designed with 💛 and Code</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
