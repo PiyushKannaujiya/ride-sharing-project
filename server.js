@@ -101,7 +101,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// NEW LOGIN ROUTE:
+// LOGIN ROUTE:
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
 
@@ -111,8 +111,24 @@ app.post('/login', (req, res) => {
         // Redirect to ride page on success
         return res.redirect('/ride.html'); 
     } else {
-        // Simple error response (better handling needed in production)
         return res.status(400).send('Login failed. Please provide username and password.');
+    }
+});
+
+// SIGNUP ROUTE:
+app.post('/signup', (req, res) => {
+    // Hum form se username, email, aur password lenge
+    const { username, email, password } = req.body;
+
+    // --- DUMMY SIGNUP LOGIC ---
+    if (username && email && password) {
+        console.log(`New user signed up: ${username} with email ${email}`);
+        
+        // Signup successful hone par, hum user ko seedha ride page par bhej denge.
+        return res.redirect('/ride.html'); 
+    } else {
+        // Agar koi field missing hai
+        return res.status(400).send('Signup failed. Please provide all details.');
     }
 });
 

@@ -16,13 +16,14 @@
     <div class="container">
       <h2>Sign Up</h2>
 
-      <p style="text-align: center; color: #f5d142; margin-top: 1rem;">
-        Sign Up functionality temporarily unavailable. Please proceed to book a ride.
-      </p>
-      
-      <div class="btn-group">
-        <a href="ride.html" class="btn">Book a Ride</a>
-      </div>
+      <form action="/signup" method="POST" class="form">
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Enter username" required />
+          <input type="email" name="email" placeholder="Enter email" required />
+          <input type="password" name="password" placeholder="Enter password" required />
+        </div>
+        <button type="submit" class="btn">Create Account</button>
+      </form>
 
       <p class="switch-text">Already have an account? 
         <a href="login.html" class="link">Login</a>
