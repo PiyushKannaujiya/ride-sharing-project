@@ -79,7 +79,8 @@
       resultContainer.innerHTML = '<p style="color: #cfae1d;">Finding your ride...</p>';
 
       try {
-        const response = await fetch('/api/optimize-ride', {
+        // Correct API call using relative path
+        const response = await fetch('/api/optimize-ride', { 
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

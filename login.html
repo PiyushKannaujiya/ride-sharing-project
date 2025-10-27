@@ -16,18 +16,11 @@
     <div class="container">
       <h2>Login</h2>
 
-      <!-- ✅ Updated form action -->
-      <form action="http://localhost/cgi-bin/backend/backend.cgi" method="POST" class="form">
+      <form action="/login" method="POST" class="form"> 
         <div class="form-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Enter your username" required />
+          <input type="text" name="username" placeholder="Enter username" required />
+          <input type="password" name="password" placeholder="Enter password" required />
         </div>
-
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required />
-        </div>
-
         <button type="submit" class="btn">Login</button>
       </form>
 
